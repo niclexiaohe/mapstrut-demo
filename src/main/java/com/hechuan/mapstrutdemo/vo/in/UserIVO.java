@@ -1,11 +1,11 @@
-package com.hechuan.mapstrutdemo.dto.in;
+package com.hechuan.mapstrutdemo.vo.in;
 
 import java.util.Date;
 
 /**
- * 用户IDTO
+ * 用户IVO
  */
-public class UserIDTO {
+public class UserIVO {
 
     /**
      * 用户名
@@ -21,6 +21,11 @@ public class UserIDTO {
      * 用户出生日期
      */
     private Date birthday;
+
+    /**
+     * 性别
+     */
+    private String gender;
 
     public String getName() {
         return name;
@@ -44,5 +49,13 @@ public class UserIDTO {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }
