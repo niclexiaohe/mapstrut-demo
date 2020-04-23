@@ -35,6 +35,7 @@ public class MapstrutDemoApplication {
         userIDTO.setAge(18);
         userIDTO.setBirthday(new Date());
         userIDTO.setGender("1");
+//        userIDTO = null;
         UserOVO userODTO = userMapper.toODTO(userIDTO);
         return userODTO;
     }

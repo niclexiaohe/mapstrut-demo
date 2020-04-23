@@ -25,6 +25,11 @@ public class UserOVO {
      */
     private Integer userGender;
 
+    /**
+     * 兴趣爱好
+     */
+    private String favorite;
+
     public String getUserName() {
         return userName;
     }
@@ -55,5 +60,13 @@ public class UserOVO {
 
     public void setUserGender(Integer userGender) {
         this.userGender = userGender;
+    }
+
+    public String getFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(String favorite) {
+        this.favorite = favorite;
     }
 }
